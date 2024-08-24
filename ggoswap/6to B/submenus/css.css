@@ -1,0 +1,138 @@
+header{
+    border: 2px sold;
+    background-color: rgba(223, 216, 216, 0.5);
+    grid-area: hea;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#alexo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-right: 890px;
+    font-size: 55px;
+    color: black;
+}
+
+#uni{
+    border: 2px soid;
+    border-color: black;
+    grid-area:na1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    color: rgb(223, 216, 216);
+}
+
+
+#dosi{
+    border: 6px soid;
+    border-color: black;
+    grid-area:na2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    color: rgb(223, 216, 216);
+}
+#tresi{
+    border: 6px soid;
+    border-color: black;
+    grid-area:na3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    color: rgb(223, 216, 216);
+}
+.s1{
+    border: 4px solid;
+    grid-area:s1;
+    margin: 10px;
+    text-align: center;
+    border-color: rgb(219, 207, 207);
+    font-size: 30px;
+    background-color: aliceblue;
+    transition: transform 0.9s;
+    transform-style: preserve-3d;
+}
+.s1:hover {
+    transform: rotateY(180deg);
+}
+.cara {
+    position: absolute;
+   height: 472px ;
+   width: 1214px;
+backface-visibility: hidden;
+}
+
+.cara-adelante {
+    background-color: #296329;
+  
+    
+}
+
+.cara-atras {
+    background-color: #20b340;
+    transform: rotateY(180deg);
+  
+}
+
+h1{
+    color: rgb(224, 14, 14);
+}
+.pie{
+    border: 4px solid;
+    grid-area:pie;
+    text-align: center;
+    border-color: black;
+    margin: 10px;
+    font-size: 30px;
+background-color: aliceblue;
+    
+}
+.s2{
+    border: 4px solid;
+    grid-area:s2;
+    text-align: center;
+    border-color: black;
+    margin: 10px;
+    font-size: 30px;
+    background-color: aliceblue;
+    
+}
+img{
+    width: 593px ;
+    height: 472px ;
+}
+body{
+  background-image: url('https://c4.wallpaperflare.com/wallpaper/36/647/738/enredaderas-hojas-naturaleza-planta-wallpaper-preview.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    display: grid;
+    grid-template-rows: 100px 100px 500px 300px;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-areas:
+    "hea hea hea"
+    "na1 na2 na3"
+    "s1 s1 s2"
+    "pie pie pie";
+    gap:px;
+}
+@media(max-width:800px){
+    body{
+        grid-template-rows: 100px 100px 200px 200px 300px;
+        grid-template-columns: 100%;
+        grid-template-areas: 
+        "hea"
+        "na"
+        "s1"
+        "s2"
+        "pie";
+        gap:14px ;
+    }
+}

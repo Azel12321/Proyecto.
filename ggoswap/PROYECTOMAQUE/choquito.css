@@ -1,0 +1,214 @@
+header{
+    border: 2px sold;
+    grid-area: hea;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header #usuimg{
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 100%;
+    width: 60px;
+    margin-left: 400px;
+}
+header #tituusuimg{
+    color: white;
+}
+#alexo{
+    text-shadow: 0 0 20px #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: 670px;
+    font-size: 55px;
+    color:white
+}
+#pepe{
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 100%;
+    width: 88px;
+}
+#pepe:hover{
+    border-radius:50%;
+    -webkit-border-radius:50%;
+    box-shadow: 0px 0px 15px 15px #ec731e;
+    -webkit-box-shadow: 0px 0px 15px 15px #ec731e;
+}
+#pepo{
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 100%;
+    width: 40px;
+}
+#pepo:hover{
+    border-radius:50%;
+    -webkit-border-radius:50%;
+}
+#pepi{
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 100%;
+    width: 40px;
+    margin-left: 100px;
+}
+#pepi:hover{
+    border-radius:50%;
+    -webkit-border-radius:50%;
+}
+#uni{
+    border: 2px soid;
+    border-color: black;
+    grid-area:na1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    color: rgb(223, 216, 216);
+}
+#pexo{
+    transition: color 0.5;
+}
+#pexo:hover{
+    color:white
+}
+#dosi{
+    border: 6px sold;
+    border-color: black;
+    grid-area:na2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    color: rgb(223, 216, 216);
+}
+#tresi{
+    border: 6px sold;
+    border-color: black;
+    grid-area:na3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    color: rgb(223, 216, 216);
+}
+#uno{
+    display: flex;
+    justify-content: center;
+    border: 6px sold;
+    border-color: black;
+    grid-area: s1;
+    color: rgb(223, 216, 216);
+    font-size: 30px;
+}
+#dos{
+    border: 6px sold;
+    border-color: black;
+    grid-area: s2;
+    color: rgb(223, 216, 216);
+    font-size: 30px;
+}
+#vid1{
+    margin-top: 50px;
+}
+#chuchin{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    color: rgb(223, 216, 216);
+    margin-left: 800px;
+    margin-right: 800px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-size: 30px;
+    transition: color 0.5s;
+}
+#chuchin:hover{
+    color:blue
+}
+#tres{
+    border: 6px sold;
+    border-color: black;
+    grid-area: s3;
+    color: rgb(223, 216, 216);
+}
+#maudet{
+    font-size: 24px; 
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+#abajos{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    transition: color 0.5s;
+}
+#juan{
+    animation-name: cambiocolor;
+    animation-duration: 1s;
+    transition: color 0.5s;
+    display: flex;
+    font-size: 30px;
+    margin-right: 200px;
+    margin-left: 180px;
+    margin-top: 200px;
+    color: rgb(223, 216, 216)
+    
+}
+#juan:hover{
+    color: blue
+}
+#gonza{
+    animation-name: cambiocolor;
+    animation-duration: 1s;
+    transition: color 0.5s;
+    display: flex;
+    font-size: 30px;
+    margin-right: 200px;
+    margin-left: 180px;
+    margin-top: 20px;
+    margin-bottom: 200px;
+    color: rgb(223, 216, 216)
+}
+#gonza:hover{
+    color: blue
+}
+footer{
+    border: 6px sold;
+    border-color: black;
+    grid-area: pie;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+}
+body{
+    background-image: url("https://c.wallhere.com/photos/7b/b4/1920x1080_px_black_landscape_nature_Trees_white-689845.jpg!d");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: grid;
+    grid-template-rows: 100px 100px 500px 190px;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-areas:
+    "hea hea hea"
+    "na1 na2 na3"
+    "s1 s2 s3"
+    "pie pie pie";
+    gap:3px;
+}
+
+@media(max-width:800px){
+    body{
+        grid-template-rows: 100px 100px 200px 200px 300px;
+        grid-template-columns: 100%;
+        grid-template-areas: 
+        "hea"
+        "na"
+        "s1"
+        "s2"
+        "s3"
+        "pie";
+        gap:14px ;
+    }
+}

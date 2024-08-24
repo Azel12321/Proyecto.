@@ -1,0 +1,82 @@
+header{
+    border: 2px sold;
+    background-color: rgba(223, 216, 216, 0.5);
+    grid-area: hea;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#alexo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-right: 890px;
+    font-size: 55px;
+}
+
+#uni{
+    border: 2px soid;
+    border-color: black;
+    grid-area:na1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    color: rgb(223, 216, 216);
+}
+.form{
+    display: block;
+    font-size: 35px;
+    position:absolute; bottom: 370px; right: 780px;
+   
+}
+
+#dosi{
+    border: 6px soid;
+    border-color: black;
+    grid-area:na2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    color: rgb(223, 216, 216);
+}
+#tresi{
+    border: 6px soid;
+    border-color: black;
+    grid-area:na3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    color: rgb(223, 216, 216);
+}
+body{
+    background-color: rgb(163, 132, 132);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: grid;
+    grid-template-rows: 100px 100px 500px 190px;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-areas:
+    "hea hea hea"
+    "na1 na2 na3"
+    "s1 s2 s3"
+    "pie pie pie";
+    gap:3px;
+}
+@media(max-width:800px){
+    body{
+        grid-template-rows: 100px 100px 200px 200px 300px;
+        grid-template-columns: 100%;
+        grid-template-areas: 
+        "hea"
+        "na"
+        "s1"
+        "s2"
+        "s3"
+        "pie";
+        gap:14px ;
+    }
+}

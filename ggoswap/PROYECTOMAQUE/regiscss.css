@@ -1,0 +1,131 @@
+header{
+    
+    grid-area: hea;
+    font-size: 45px;
+   color:rgb(255, 255, 255);
+}
+.controls{
+    padding: 23px;
+    border-radius:20px;
+   
+    
+  
+}
+.controls1{
+    padding: 15px;
+    border-radius:20px;
+    width: 150px;
+    background-color: yellow;
+    display: flex;
+    justify-content: center;
+    margin-left: 1430px;
+
+}
+.u{
+    color: yellow;
+}
+#pepe{
+   background-color: rgb(44, 27, 27);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 100%;
+    width: 88px;
+}
+nav{
+    border: 6px solid;
+    border-color: black;
+    grid-area:nav;
+}
+
+#uno{
+
+    grid-area: s1;
+    color: aliceblue;
+    font-size: 30px;
+
+}
+#dos{
+ 
+    grid-area: s2;
+}
+#tres{
+    border: 6px solid;
+    border-color: black;
+    grid-area: s3;
+}
+footer{
+  
+    grid-area: pie;
+}
+#lol{
+   
+    grid-area: lol;
+    font-size: 20px;
+    color: aliceblue;
+    
+
+}
+#lol2{
+  
+    grid-area: lol2;
+    
+
+}
+#lol1{
+    color: aliceblue;
+    grid-area: lol1;
+    font-size: 30px;
+    
+
+}
+#l1{
+    grid-area: l1;
+    
+
+}
+#xd{
+    font-size: 35px;
+    grid-area: xd;
+    color: aliceblue;
+}
+#xd1{
+    grid-area: xd1;
+
+}
+    
+body{
+    background-color: rgb(14, 13, 13);
+    box-sizing: border-box;
+    display: grid;
+    grid-template-rows: 200px 100px 100px 100px 200px 100px;
+    grid-template-columns: 50% 50%;
+    grid-template-areas:
+    "hea hea "
+    "lol l1 "
+    "s1 s2 "
+    "lol1 lol2"
+    "xd  xd1"
+    "pie pie";
+    gap:14px;
+
+}
+@media(max-width:800px){
+    body{
+        grid-template-rows: 100px 100px 200px 200px 300px;
+        grid-template-columns: 100%;
+        grid-template-areas: 
+        "hea"
+        "na"
+        "lol"
+        "lol1"
+        "lol2"
+        "l1"
+        "s1"
+        "s2"
+        "s3"
+        "xd"
+        "xd1"
+        "pie";
+        gap:14px ;
+    }
+}

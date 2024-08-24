@@ -1,0 +1,101 @@
+header{
+  border: 6px solid;
+  border-color: black;
+  grid-area: hea;
+  background-color: aliceblue;
+}
+.lol{
+  font-size: 30px;
+}
+.btn2{
+  transition: color 0.5;
+  padding: 28px 410px;
+  background-color: rgb(177, 177, 33);
+  color:aliceblue;
+}
+.btn2:hover{
+  color: red;
+}
+.btn3{
+  padding: 37px 403px ;
+  background-color: red;
+  color:aliceblue;
+}
+.btn3:hover{
+  color: white;
+}
+.btn{
+  padding: 37px 410px;
+  background-color: blue;
+  color:aliceblue;
+}
+.btn:hover{
+  color:red;
+}
+.btn1{
+  padding: 20px 405px ;
+  background-color: green;
+  color:aliceblue;
+}
+.btn1:hover{
+  color:red;
+}
+.kok{
+  margin-top: -4px ;
+  font-size: 20px ;
+  color: aliceblue;
+}
+.ñop{
+  margin-top: -4px;
+  font-size:20px ;
+  color:aliceblue
+}
+.kk{
+  margin-top: -15px; 
+  font-size: 20px;
+}
+nav{
+  border: 4px solid;
+  border-color: black;
+  grid-area:na;
+  background-color: green;
+}
+#uno{
+  border: 4px solid;
+  border-color: black;
+  grid-area: s1;
+  background-color: blue;
+}
+#dos{
+  border: 4px solid;
+  border-color: black;
+  grid-area: s2;
+  background-color: red;
+}
+#tres{
+  border: 6px solid;
+  border-color: black;
+  grid-area: s3;
+  background-color:rgb(177, 177, 33) ;
+}
+footer{
+  border: 6px solid;
+  background-image: url("https://d5tnfl9agh5vb.cloudfront.net/uploads/2022/06/Que-es-estadistica.png");
+  background-size:cover;
+  background-repeat: no-repeat;
+  grid-area: pie;
+}
+body{
+  background-image:url('https://i.pinimg.com/originals/fe/9c/6b/fe9c6be5759c12298688b2dd97cd5fd1.jpg');
+  background-size:cover;
+  background-repeat: no-repeat;
+  display: grid;
+  grid-template-rows:80px 170px 170px 400px;
+  grid-template-columns: 50% 50% ;
+  grid-template-areas:
+  "hea hea "
+  "na s3"
+  "s1 s2 "
+  "pie pie ";
+  gap:14px;
+}

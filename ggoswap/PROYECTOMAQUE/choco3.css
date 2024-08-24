@@ -1,0 +1,168 @@
+header{
+    border: 2px sold;
+    background-color: rgba(233, 227, 227, 0.5);
+    grid-area: hea;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#alexo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-right: 890px;
+    font-size: 55px;
+}
+#pepe{
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 100%;
+    width: 88px;
+    margin-top: 1.9px;
+    margin-left: 2px;
+}
+#pepo{
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 100%;
+    margin-right: 30px;
+    width: 40px;
+}
+#pepi{
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 100%;
+    width: 40px;
+    margin-left: 450px;
+}
+#uni{
+    border: 2px soid;
+    border-color: black;
+    grid-area:na1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    color: rgb(223, 216, 216);
+}
+#dosi{
+    border: 6px soid;
+    border-color: black;
+    grid-area:na2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    color: rgb(223, 216, 216);
+}
+#tresi{
+    border: 6px soid;
+    border-color: black;
+    grid-area:na3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    color: rgb(223, 216, 216);
+}
+#uno{
+    border: 6px soid;
+    border-color: black;
+    grid-area: s1;
+    color: rgb(223, 216, 216);
+    font-size: 30px;
+}
+#dos{
+    border: 6px soid;
+    border-color: black;
+    grid-area: s2;
+    color: rgb(223, 216, 216);
+    font-size: 30px;
+}
+#chuchin{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    border: 2px solid #000;
+    margin-left: 800px;
+    margin-right: 800px;
+    margin-top: 40px;
+    color: rgb(223, 216, 216);
+    margin-bottom: 40px;
+    font-size: 30px;
+}
+#tres{
+    border: 6px sold;
+    border-color: black;
+    grid-area: s3;
+    color: rgb(223, 216, 216);
+}
+#maudet{
+    font-size: 24px; 
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+#abajos{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+#juan{
+    border: 2px solid;
+    display: flex;
+    font-size: 30px;
+    margin-right: 200px;
+    margin-left: 180px;
+    margin-top: 200px;
+    color: rgb(223, 216, 216)
+}
+#gonza{
+    border: 2px solid;
+    display: flex;
+    font-size: 30px;
+    margin-right: 200px;
+    margin-left: 180px;
+    margin-top: 20px;
+    margin-bottom: 200px;
+    color: rgb(223, 216, 216)
+}
+footer{
+    border: 6px sold;
+    border-color: black;
+    grid-area: pie;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+}
+body{
+    background-image: url("https://c.wallhere.com/photos/7b/b4/1920x1080_px_black_landscape_nature_Trees_white-689845.jpg!d");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: grid;
+    grid-template-rows: 100px 100px 500px 190px;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-areas:
+    "hea hea hea"
+    "na1 na2 na3"
+    "s1 s2 s3"
+    "pie pie pie";
+    gap:3px;
+}
+
+@media(max-width:800px){
+    body{
+        grid-template-rows: 100px 100px 200px 200px 300px;
+        grid-template-columns: 100%;
+        grid-template-areas: 
+        "hea"
+        "na"
+        "s1"
+        "s2"
+        "s3"
+        "pie";
+        gap:14px ;
+    }
+}
+
+

@@ -1,0 +1,54 @@
+header{
+    border: 6px solid;
+    border-color: black;
+    grid-area: hea;
+    font-size: 20px;
+}
+.lpo{
+    position:absolute; top: 100px;
+
+
+}
+#uno{
+    border: 6px solid;
+    border-color: black;
+    grid-area: s1;
+
+}
+.pop{
+    position:absolute; bottom: 100px ; right: 300px;
+    font-size: 15px;
+}
+footer{
+    border: 6px solid;
+    border-color: black;
+    grid-area: pie;
+}
+body{
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjXwyo6M2iMLqGL0UNRj99YxwSpI5sopJC8A&s");
+    display: grid;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    grid-template-rows:  100px 700px ;
+    grid-template-columns: 50% 50%;
+    grid-template-areas:
+    "hea hea "
+    "pie s1 ";
+    gap:14px;
+}
+
+@media(max-width:800px){
+    body{
+        grid-template-rows: 100px 100px 200px 200px 300px;
+        grid-template-columns: 100%;
+        grid-template-areas: 
+        "hea"
+        "na"
+        "s1"
+        "s2"
+        "s3"
+        "pie";
+        gap:14px ;
+    }
+}

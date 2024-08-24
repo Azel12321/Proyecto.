@@ -1,0 +1,63 @@
+header{
+    border: 6px solid;
+    border-color: black;
+    grid-area: hea;
+}
+#pepe{
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 100%;
+    width: 88px;
+}
+nav{
+    border: 6px solid;
+    border-color: black;
+    grid-area:na;
+}
+#uno{
+    border: 6px solid;
+    border-color: black;
+    grid-area: s1;
+}
+#dos{
+    border: 6px solid;
+    border-color: black;
+    grid-area: s2;
+}
+#tres{
+    border: 6px solid;
+    border-color: black;
+    grid-area: s3;
+}
+footer{
+    border: 6px solid;
+    border-color: black;
+    grid-area: pie;
+}
+body{
+    background-image: url("https://i.pinimg.com/originals/89/b4/85/89b4856b9b67f03b8e1cbefe05b92b53.jpg");
+    display: grid;
+    grid-template-rows: 100px 100px 500px 190px;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-areas:
+    "hea hea hea"
+    "na na na"
+    "s1 s2 s3"
+    "pie pie pie";
+    gap:14px;
+}
+
+@media(max-width:800px){
+    body{
+        grid-template-rows: 100px 100px 200px 200px 300px;
+        grid-template-columns: 100%;
+        grid-template-areas: 
+        "hea"
+        "na"
+        "s1"
+        "s2"
+        "s3"
+        "pie";
+        gap:14px ;
+    }
+}
